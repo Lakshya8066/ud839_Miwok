@@ -21,6 +21,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,11 +40,12 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the numbers category is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link NumbersActivity}
+//                // Create a new intent to open the {@link NumbersActivity}
                 Intent numbersIntent = new Intent(MainActivity.this, NumbersActivity.class);
 
                 // Start the new activity
                 startActivity(numbersIntent);
+//                Toast.makeText(view.getContext(), "Done it successfully", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -95,4 +97,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
 }

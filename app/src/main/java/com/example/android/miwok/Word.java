@@ -8,7 +8,7 @@ public class Word {
     /*
     Get default translation of the word
      */
-    private Word(String defaultTranslation, String miwoktranslation)
+    public Word(String defaultTranslation, String miwoktranslation)
     {
         mDefaultTranslation = defaultTranslation;
         mMiwokTralation = miwoktranslation;

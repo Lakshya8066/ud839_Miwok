@@ -5,21 +5,23 @@ public class Word {
     private String mDefaultTranslation;
     //Default translation for the word
     private String mMiwokTralation;
+
     /*
     Get default translation of the word
      */
-    public Word(String defaultTranslation, String miwoktranslation)
-    {
+    public Word(String defaultTranslation, String miwoktranslation) {
         mDefaultTranslation = defaultTranslation;
         mMiwokTralation = miwoktranslation;
     }
+
     /*
     Get Miwok translation of the word
      */
-    public String getDefaultTranslation(){
+    public String getDefaultTranslation() {
         return mDefaultTranslation;
     }
-    public String getMiwokTranslation(){
+
+    public String getMiwokTranslation() {
         return mMiwokTralation;
     }
 }
